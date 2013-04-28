@@ -1,4 +1,3 @@
-
 This is a project to provide an Eclipse plugin for [CoffeeScript][coffeescript], using [Xtext][xtext].
 Development uses Xtext 2.1.
 It works as a regular Eclipse plugin (see Installation for details).
@@ -10,9 +9,13 @@ Highlights include
 
 
 # Status
-It's aimed at being mostly compatible with the original CoffeeScript project.
-There are some extra features and some missing,
+> It's aimed at being mostly compatible with the original CoffeeScript project.
+>There are some extra features and some missing,
  but you probably (and hopefully) won't notice the difference in everyday use.
+
+coffeescript-eclipse has not been updated for a year. Paul has not yet contacted Adam Schmideg,
+but tell the worlds if there will be 2-3 persons willing to make maintenance release
+and do some refresh, we could include CoffeeScript Editor into Nodeclipse distributions.
 
 ## Extra features
 CoffeeScript is a dyanmic language,
