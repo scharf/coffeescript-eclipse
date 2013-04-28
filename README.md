@@ -14,7 +14,7 @@ Highlights include
  but you probably (and hopefully) won't notice the difference in everyday use.
 
 coffeescript-eclipse has not been updated for a year. Paul has not yet contacted Adam Schmideg,
-but tell the worlds if there will be 2-3 persons willing to make maintenance release
+but tell the world that if there will be 2-3 persons willing to make maintenance release
 and do some refresh, we could include CoffeeScript Editor into Nodeclipse distributions.
 
 ## Extra features
