@@ -75,6 +75,10 @@ Getting the value of a deeply nested property is OK.
 </dl>
 
 # Installation
+
+There is [quick installer on Marketplace](http://marketplace.eclipse.org/content/coffeescript-editor-quick-installer).
+ Below is original details instructions:
+
 You will need an Eclipse instance with Xtext plugins.
 You can either install a complete Indigo distribution with Xtext,
  or install the required plugins into your existing workspace.
