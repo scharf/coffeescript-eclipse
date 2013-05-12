@@ -13,9 +13,14 @@ Highlights include
 >There are some extra features and some missing,
  but you probably (and hopefully) won't notice the difference in everyday use.
 
-coffeescript-eclipse has not been updated for a year. Paul has not yet contacted Adam Schmideg,
-but tell the world that if there will be 2-3 persons willing to make maintenance release
-and do some refresh, we could include CoffeeScript Editor into Nodeclipse distributions.
+<b>Looking for owner<b>
+
+coffeescript-eclipse has not been updated for a year.
+Paul has contacted Adam Schmideg, the original author at FORMULA 400, and got blessing for Nodeclipse
+to be new home for CoffeScript Editor. Current Nodeclipse team lacks needed skills (and time) to continue the project,
+but tell the world that if there will be a person willing to make maintenance release
+and do some refresh (and possibly become project owner),
+we will include CoffeeScript Editor into Nodeclipse distributions.
 
 ## Extra features
 CoffeeScript is a dyanmic language,
