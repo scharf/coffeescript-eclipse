@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/csep/src-gen" editDirectory="/csep.edit/src" editorDirectory="/csep.editor/src"
+    modelPluginID="csep" forceOverwrite="true" modelName="CoffeeScript" updateClasspath="false"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" complianceLevel="5.0"
+    copyrightFields="false" editPluginID="csep.edit" editorPluginID="csep.editor"
+    runtimeVersion="2.8">
+  <genPackages prefix="CoffeeScript" basePackage="csep" disposableProviderFactory="true"
+      ecorePackage="CoffeeScript.ecore#/">
+    <genClasses ecoreClass="CoffeeScript.ecore#//Root"/>
+    <genClasses ecoreClass="CoffeeScript.ecore#//Body">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Body/lines"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//Line"/>
+    <genClasses ecoreClass="CoffeeScript.ecore#//Stmt">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeScript.ecore#//Stmt/statement"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//Comment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeScript.ecore#//Comment/comment"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//RequireStmt">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//RequireStmt/importedNamespace"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeScript.ecore#//RequireStmt/uri"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//ReturnStmt">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//ReturnStmt/expression"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//ReturnStmt/condition"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//ThrowStmt">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//ThrowStmt/exp"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//SuperClass"/>
+    <genClasses ecoreClass="CoffeeScript.ecore#//ClassDeclaration">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//ClassDeclaration/body"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//ClassDeclaration/extend"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//ClassDeclaration/name"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//AssignedClassDeclaration"/>
+    <genClasses ecoreClass="CoffeeScript.ecore#//Expression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Expression/indexes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Expression/source"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Expression/left"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeScript.ecore#//Expression/operator"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Expression/right"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//ForValue"/>
+    <genClasses ecoreClass="CoffeeScript.ecore#//ForSource">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//ForSource/source"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//ForSource/when"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//ForSource/by"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//Range">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Range/start"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Range/end"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//Application">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Application/value"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Application/features"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//FeatureCall"/>
+    <genClasses ecoreClass="CoffeeScript.ecore#//FunctionCall">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//FunctionCall/args"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//PropertyAccess"/>
+    <genClasses ecoreClass="CoffeeScript.ecore#//ThisProperty">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeScript.ecore#//ThisProperty/splat"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//ThisProperty/defaultValue"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//NamedPropertyAccess">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeScript.ecore#//NamedPropertyAccess/accessor"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//NamedPropertyAccess/name"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//IndexedPropertyAccess">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//IndexedPropertyAccess/index"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//Index">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeScript.ecore#//Index/dots"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Index/end"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Index/start"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Index/exp"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//PrimaryExpression"/>
+    <genClasses ecoreClass="CoffeeScript.ecore#//Block"/>
+    <genClasses ecoreClass="CoffeeScript.ecore#//Case">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Case/whens"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Case/then"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//IfExp">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//IfExp/blocks"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//IfExp/defaultBlock"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//CondBlock">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeScript.ecore#//CondBlock/operator"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//CondBlock/condition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//CondBlock/action"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//IdRef">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//IdRef/val"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeScript.ecore#//IdRef/accessor"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//IdRef/prop"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//IdRef/index"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//Id">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeScript.ecore#//Id/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Id/props"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//Property"/>
+    <genClasses ecoreClass="CoffeeScript.ecore#//Variable"/>
+    <genClasses ecoreClass="CoffeeScript.ecore#//AssignableArray"/>
+    <genClasses ecoreClass="CoffeeScript.ecore#//AssignableArgList">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//AssignableArgList/args"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//AssignableArg">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//AssignableArg/arg"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeScript.ecore#//AssignableArg/splat"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//Assignable"/>
+    <genClasses ecoreClass="CoffeeScript.ecore#//Arg">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Arg/exp"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeScript.ecore#//Arg/splat"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//ArgLine">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//ArgLine/head"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//ArgLine/tail"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//ExplicitArgList">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//ExplicitArgList/lines"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//ArgList">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//ArgList/dummy"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//Array">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeScript.ecore#//Array/splat"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Array/defaultValue"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//Dictionary">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeScript.ecore#//Dictionary/splat"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Dictionary/defaultValue"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//DictItems">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//DictItems/dummy"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//ExplicitDictItems">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//ExplicitDictItems/lines"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//DictLine">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//DictLine/head"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//DictLine/tail"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//DictItem">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//DictItem/key"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//DictItem/value"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//DictKey"/>
+    <genClasses ecoreClass="CoffeeScript.ecore#//Lambda">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Lambda/params"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Lambda/body"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//Param"/>
+    <genClasses ecoreClass="CoffeeScript.ecore#//NumberLiteral"/>
+    <genClasses ecoreClass="CoffeeScript.ecore#//StringLiteral"/>
+    <genClasses ecoreClass="CoffeeScript.ecore#//BoolLiteral"/>
+    <genClasses ecoreClass="CoffeeScript.ecore#//JSLiteral"/>
+    <genClasses ecoreClass="CoffeeScript.ecore#//RegexLiteral"/>
+    <genClasses ecoreClass="CoffeeScript.ecore#//Literal"/>
+    <genClasses ecoreClass="CoffeeScript.ecore#//Parenthetical">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Parenthetical/content"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//If">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//If/dummy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//If/condition"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//For">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//For/dummy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//For/body"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//For/loop"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//While">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//While/dummy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//While/body"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//While/when"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//While/loop"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//Until">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Until/dummy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Until/body"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Until/when"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Until/loop"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//BinaryExp"/>
+    <genClasses ecoreClass="CoffeeScript.ecore#//SuperCall">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//SuperCall/args"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//ThisAlone"/>
+    <genClasses ecoreClass="CoffeeScript.ecore#//Loop">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Loop/body"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//TryCatch">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//TryCatch/body"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//TryCatch/exception"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//TryCatch/catchBlock"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//TryCatch/finallyBlock"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeScript.ecore#//Switch">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Switch/exp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Switch/cases"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeScript.ecore#//Switch/elseBlock"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

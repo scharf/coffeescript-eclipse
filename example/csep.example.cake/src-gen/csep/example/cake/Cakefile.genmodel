@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/csep.example.cake/src-gen" editDirectory="/csep.example.cake.edit/src"
+    editorDirectory="/csep.example.cake.editor/src" modelPluginID="csep.example.cake"
+    forceOverwrite="true" modelName="Cakefile" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="csep.example.cake.edit"
+    editorPluginID="csep.example.cake.editor" runtimeVersion="2.8" usedGenPackages="../../../../../csep/src-gen/csep/CoffeeScript.genmodel#//coffeeScript">
+  <genPackages prefix="Cakefile" basePackage="csep.example.cake" disposableProviderFactory="true"
+      ecorePackage="Cakefile.ecore#/">
+    <genClasses ecoreClass="Cakefile.ecore#//Cakefile">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cakefile.ecore#//Cakefile/tasks"/>
+    </genClasses>
+    <genClasses ecoreClass="Cakefile.ecore#//TaskDeclaration">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cakefile.ecore#//TaskDeclaration/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cakefile.ecore#//TaskDeclaration/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cakefile.ecore#//TaskDeclaration/options"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cakefile.ecore#//TaskDeclaration/body"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
