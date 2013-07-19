@@ -381,16 +381,33 @@ terminal QUESTION: '?';
 terminal QUESTION_DOT: '?.';
 terminal RBRACKET: ']';
 terminal RCURLY: 'dummy RCURLY';
-terminal REGEX: '///' -> '///';
+terminal REGEX: 
+    '///' -> '///' |
+    '/' ( 
+    	// no closing quote at the beginning (handled by the ? at the end of the epression
+    	(!('/'|'\\') 
+    		| ('\\' 
+    			// ther can be a quoted CR? LF
+    			(!('\n' | '\r') | ('\r'? '\n'))
+    		)
+    	) 
+    	(
+    		// either a quoted character or a quoted newline
+    		'\\' (!('\n' | '\r') | ('\r'? '\n')) 
+    		// or any other character except for a newline
+    		| !('\\'|'/'|'\n')
+     	)*
+    )? '/';
+
 terminal RELATION: 'in' | 'of' | 'instanceof'; 
 terminal RETURN: 'return';
 terminal RPAREN: ')';
 terminal STATEMENT: 'break' | 'continue' | 'debugger';
 terminal STRING:
 	"'''" -> "'''" |
-	"'" (!("'") ('\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|"'"))*)? "'" |
+	"'" ( (!("'"|'\\') | ('\\' (!('\n' | '\r') | ('\r'? '\n'))  )) ('\\' (!('\n' | '\r') | ('\r'? '\n')) | !('\\'|"'"|'\n'))*)? "'" |
 	'"""' -> '"""' |
-	'"' (!('"') ('\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|'"'))*)? '"';
+	'"' ( (!('"'|'\\') | ('\\' (!('\n' | '\r') | ('\r'? '\n')))) ('\\' (!('\n' | '\r') | ('\r'? '\n'))  | !('\\'|'"'|'\n'))*)? '"';
 terminal SUPER: 'super';
 terminal SWITCH: 'switch';
 terminal TERMINATOR: '\n'+;
